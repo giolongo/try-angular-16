@@ -1,0 +1,3 @@
+<h1>Numero di preferite {{numberOfFavorite()}}</h1>
+<app-tv-show *ngFor="let tvShow of tvShows()" [tvShow]="tvShow" [isFavorite]="favoriteTvShows().includes(tvShow.id)" (addRemoveToFavorite)="addRemoveFavorite($event)"></app-tv-show>
+
